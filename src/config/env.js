@@ -12,7 +12,7 @@ const envSchema = z.object({
   JWT_REFRESH_TTL: z.string().default('7d'),
   CORS_ORIGIN: z.string().default('http://localhost:3000'),
   LOG_LEVEL: z.string().default('info'),
-  BCRYPT_SALT_ROUNDS: z.coerce.number().int().min(8).max(14).default(10),
+  BCRYPT_SALT_ROUNDS: z.coerce.number().int().min(10).max(14).default(10),
   MAX_BODY_SIZE: z.string().default('100kb')
 });
 
