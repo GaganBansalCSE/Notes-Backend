@@ -1,0 +1,11 @@
+process.env.NODE_ENV = 'test';
+process.env.PORT = '3001';
+process.env.DATABASE_URL = process.env.DATABASE_URL || 'postgresql://user:pass@localhost:5432/notes_test?schema=public';
+process.env.JWT_ACCESS_SECRET = 'TEST_SECRET_access-secret-access-secret';
+process.env.JWT_REFRESH_SECRET = 'TEST_SECRET_refresh-secret-refresh-secret';
+process.env.JWT_ACCESS_TTL = '15m';
+process.env.JWT_REFRESH_TTL = '7d';
+process.env.CORS_ORIGIN = 'http://localhost:3000';
+process.env.LOG_LEVEL = 'silent';
+process.env.BCRYPT_SALT_ROUNDS = '10';
+process.env.MAX_BODY_SIZE = '100kb';
